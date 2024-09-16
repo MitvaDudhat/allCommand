@@ -1,0 +1,57 @@
+ALL Command
+
+ * Create new Project Command
+
+    -  npx react-native@latest init projectname
+
+
+
+ *  JAVA Change Version Command Line
+
+- /usr/libexec/java_home -V
+
+- export JAVA_HOME=$(/usr/libexec/java_home -v 17.0.11)
+
+- echo 'export JAVA_HOME=$(/usr/libexec/java_home -v 17.0.11)’ >> /.zshrc
+source /.zshrc
+
+- java -version
+- 
+
+ * Gradlew Clean Error 
+
+saubhagyam@Saubhagyams-Mac-mini android % ./gradlew clean
+zsh: permission denied: ./gradlew                                                          
+saubhagyam@Saubhagyams-Mac-mini DSOSE % chmod +x ./gradlew  && saubhagyam@Saubhagyams-Mac-mini android % chmod +x ./gradlew 
+
+
+ * Redux Toolkit :
+ 
+- yarn add react-redux
+- yarn add @reduxjs/toolkit
+
+
+ * Node or NVM Change Command Line
+
+- nvm list
+
+- Nvm use 12.0.2
+
+
+ * Start the Android Emulator
+
+- emulator -list-avds
+- emulator -avd <your_avd_name>
+
+ * NPM Install For Old Project
+  - --legacy-peer-deps
+
+ * warn Failed to run environment setup script "setup_env.sh"
+- chmod -R 777 node_modules
+
+ * https://reactnative.dev/docs/environment-setup. Run CLI with --verbose flag for more details.Error: spawn ./gradlew EACCES at Process.ChildProcess._handle.onexit 
+  - chmod 755 android/gradlew
+
+
+
+npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
